@@ -24,11 +24,11 @@ public interface TourRepository extends PagingAndSortingRepository<Tour, Integer
 
     @Override
     @RestResource(exported = false)
-    <S extends Tour> S save(S entity);
+    <S extends Tour> S save(S s);
 
     @Override
     @RestResource(exported = false)
-    <S extends Tour> Iterable<S> saveAll(Iterable<S> entities);
+    <S extends Tour> Iterable<S> saveAll(Iterable<S> iterable);
 
     @Override
     @RestResource(exported = false)
@@ -36,11 +36,11 @@ public interface TourRepository extends PagingAndSortingRepository<Tour, Integer
 
     @Override
     @RestResource(exported = false)
-    void delete(Tour entity);
+    void delete(Tour tour);
 
     @Override
     @RestResource(exported = false)
-    void deleteAll(Iterable<? extends Tour> entities);
+    void deleteAll(Iterable<? extends Tour> iterable);
 
     @Override
     @RestResource(exported = false)

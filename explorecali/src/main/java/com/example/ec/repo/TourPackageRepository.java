@@ -26,11 +26,11 @@ public interface TourPackageRepository extends CrudRepository<TourPackage, Strin
 
     @Override
     @RestResource(exported = false)
-    <S extends TourPackage> S save(S entity);
+    <S extends TourPackage> S save(S s);
 
     @Override
     @RestResource(exported = false)
-    <S extends TourPackage> Iterable<S> saveAll(Iterable<S> entities);
+    <S extends TourPackage> Iterable<S> saveAll(Iterable<S> iterable);
 
     @Override
     @RestResource(exported = false)
@@ -38,11 +38,11 @@ public interface TourPackageRepository extends CrudRepository<TourPackage, Strin
 
     @Override
     @RestResource(exported = false)
-    void delete(TourPackage entity);
+    void delete(TourPackage tourPackage);
 
     @Override
     @RestResource(exported = false)
-    void deleteAll(Iterable<? extends TourPackage> entities);
+    void deleteAll(Iterable<? extends TourPackage> iterable);
 
     @Override
     @RestResource(exported = false)
