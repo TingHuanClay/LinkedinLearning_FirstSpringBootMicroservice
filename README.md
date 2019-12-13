@@ -191,3 +191,15 @@ Add the library to pom.xml
 
 ## Chapter 4: Expose RESTful APIs with Spring MVC
 
+4-3 
+http://localhost:8080/tours/{tourId}/ratings/
+http://localhost:8080/tours/1/ratings/
+
+JSON used for testing:
+```
+{
+	"score": 5,
+	"comment": "It was great",
+	"customerId": 1234
+}
+```
